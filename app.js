@@ -1,6 +1,9 @@
 const express = require('express')
 const logger = require('morgan')
 const cors = require('cors')
+ require('dotenv').config()
+
+// dotenv.config()
 
 const mongoose = require('mongoose')
 

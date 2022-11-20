@@ -1,3 +1,5 @@
+// const Contact = require('../../models/contact')
+
 const express = require('express')
 
 const router = express.Router()
