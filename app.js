@@ -4,7 +4,7 @@ const cors = require('cors')
 
 const mongoose = require('mongoose')
 
-DB_HOST='mongodb+srv://Maksym:150678mp@cluster0.6gunu8u.mongodb.net/contacts_reader?retryWrites=true&w=majority'
+const {DB_HOST} = require('./config')
 
 mongoose.connect(DB_HOST)
 .then(()=> console.log('Database connection successful'))
