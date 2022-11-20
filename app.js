@@ -7,7 +7,7 @@ const mongoose = require('mongoose')
 DB_HOST='mongodb+srv://Maksym:150678mp@cluster0.6gunu8u.mongodb.net/contacts_reader?retryWrites=true&w=majority'
 
 mongoose.connect(DB_HOST)
-.then(()=> console.log('Database connect success'))
+.then(()=> console.log('Database connection successful'))
 .catch(error => console.log(error.maessage));
 
 const contactsRouter = require('./routes/api/contacts')
